@@ -1,0 +1,21 @@
+{
+    "python.formatting.autopep8Args": [
+        "--max-line-length=200",
+        "--ignore=E402"
+    ],
+    "json.format.keepLines": true,
+    "json.schemas": [ {
+            "fileMatch": [ "*.jsonc" ],
+            "schema": {
+                "allowTrailingCommas": true
+            }
+        }
+    ],
+    "python.autoComplete.extraPaths": [
+        "${workspaceFolder}/"
+    ],
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/"
+    ],
+    "python.analysis.typeCheckingMode": "off"
+}

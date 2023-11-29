@@ -1,0 +1,8 @@
+PySocks
+autopep8
+json5
+numpy
+scipy
+matplotlib
+statsmodels
+requests
