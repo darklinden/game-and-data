@@ -1,0 +1,6 @@
+#int 字段名,值,备注,
+NONE,0,
+Skill1_Projectile,1,单体穿透
+Skill2_Projectile,2,范围攻击
+Skill3_Projectile,3,单体连锁-不存在
+Skill4_Projectile,4,范围持续伤害

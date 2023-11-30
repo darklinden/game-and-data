@@ -1,0 +1,5 @@
+#字段名,字段类型,备注,
+prop_type,BaseStatPropType,"基础属性类型数组,与值数组对应"
+prop_value,int64,"基础属性数值数组"
+value_type,BaseStatValueType,"基础属性值类型,与值数组对应"
+calc_order,int32,"计算顺序,与值数组对应"

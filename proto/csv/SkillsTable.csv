@@ -1,0 +1,5 @@
+技能ID|id:int32,技能类型|skill_type:SkillType,此技能的附加属性|features:[BaseStatProp],冷却时间|cooldown:int32,单个施放间隔|step_time:int32,距离|range:int32,使用到的投射物|projectiles:[ProjectileType],#备注
+10001,Skill1,ProjCountBonus#2#VAL#0;ProjHitCountBonus#2#VAL#0,3000,200,-1,Skill1_Projectile,
+20001,Skill2,ProjRadiusBonus#1000#VAL#0;ProjCountBonus#1#VAL#0;ProjHitCountBonus#3#VAL#0,2500,200,2000,Skill2_Projectile,
+30001,Skill3,Atk#200#MUL#99;ProjCountBonus#1#VAL#0,1600,200,4000,,
+40001,Skill4,ProjRadiusBonus#1000#VAL#0;ProjHitCountBonus#5#VAL#0,-1,200,-1,Skill4_Projectile,

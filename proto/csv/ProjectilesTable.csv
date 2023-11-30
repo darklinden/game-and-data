@@ -1,0 +1,4 @@
+类型|projectile_type:ProjectileType,碰撞检测|circle_colliders:[ProjCircleCollider],飞行速度|speeds:[int32],伤害生效等待时长|dmg_delay:int32,伤害重置间隔时长|dmg_reset_interval:int32,伤害系数|damage:int32,最大时长|max_life_time:int32
+Skill1_Projectile,0#0#600,5000,,,1000,2000
+Skill2_Projectile,0#0#800,-1,,500,1000,800
+Skill4_Projectile,0#0#1000,-1,,500,200,-1

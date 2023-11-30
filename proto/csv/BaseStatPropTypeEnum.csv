@@ -1,0 +1,9 @@
+#字段名,值,备注,
+UNSPECIFIED,0,,
+Atk,1,攻击力,
+CDDecBonus,2,冷却缩减,
+ProjCountBonus,3,弹道数量, 
+ProjSpeedBonus,4,弹道速度, 
+ProjDurBonus,5,弹道持续时间,
+ProjRadiusBonus,6,弹道范围, 
+ProjHitCountBonus,7,每个子弹穿透最大数量

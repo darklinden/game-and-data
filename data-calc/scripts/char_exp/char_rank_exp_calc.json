@@ -1,6 +1,7 @@
 {
-    "rank_count": 100,
+    "rank_min": 1,
+    "rank_max": 60,
     "y_min": 4.0,
-    "y_max": 300.0,
-    "param": 1.4100000000000001
+    "y_max": 1000.0,
+    "param": 1.6
 }

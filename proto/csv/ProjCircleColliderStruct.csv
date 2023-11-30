@@ -1,0 +1,4 @@
+#字段名,字段类型,备注,
+offset_x,int32,x轴偏移,
+offset_z,int32,z轴偏移,
+radius,int32,半径,

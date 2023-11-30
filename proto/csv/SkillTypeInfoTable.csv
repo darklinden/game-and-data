@@ -1,0 +1,5 @@
+技能类型|skill_type:SkillType,操作难度评分-易100~1000难|operation_difficulty:int32,不受被动属性加成(仅feature)|passive_not_affected:[BaseStatPropType],技能名称|name:string,#注释
+Skill1,900,ProjDurBonus,单体穿透,
+Skill2,600,ProjSpeedBonus,范围攻击,
+Skill3,400,ProjSpeedBonus;ProjDurBonus,单体连锁,
+Skill4,0,ProjCountBonus;ProjSpeedBonus;ProjDurBonus,范围持续伤害,

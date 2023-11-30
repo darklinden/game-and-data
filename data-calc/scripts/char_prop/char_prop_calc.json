@@ -1,0 +1,128 @@
+{
+    "level_count": 20,
+    "y_min": 10.0,
+    "y_max": 300.0,
+    "param": 0.10899999999999999,
+    "delivers": [
+        {
+            "game_level": 1,
+            "prop_deliver": 10,
+            "coin_deliver": 844,
+            "total_coin_deliver": 844
+        },
+        {
+            "game_level": 2,
+            "prop_deliver": 43,
+            "coin_deliver": 48767,
+            "total_coin_deliver": 49611
+        },
+        {
+            "game_level": 3,
+            "prop_deliver": 74,
+            "coin_deliver": 179758,
+            "total_coin_deliver": 229369
+        },
+        {
+            "game_level": 4,
+            "prop_deliver": 105,
+            "coin_deliver": 385312,
+            "total_coin_deliver": 614681
+        },
+        {
+            "game_level": 5,
+            "prop_deliver": 133,
+            "coin_deliver": 581133,
+            "total_coin_deliver": 1195814
+        },
+        {
+            "game_level": 6,
+            "prop_deliver": 159,
+            "coin_deliver": 780531,
+            "total_coin_deliver": 1976345
+        },
+        {
+            "game_level": 7,
+            "prop_deliver": 182,
+            "coin_deliver": 913708,
+            "total_coin_deliver": 2890053
+        },
+        {
+            "game_level": 8,
+            "prop_deliver": 202,
+            "coin_deliver": 984686,
+            "total_coin_deliver": 3874739
+        },
+        {
+            "game_level": 9,
+            "prop_deliver": 220,
+            "coin_deliver": 1051060,
+            "total_coin_deliver": 4925799
+        },
+        {
+            "game_level": 10,
+            "prop_deliver": 236,
+            "coin_deliver": 1074770,
+            "total_coin_deliver": 6000569
+        },
+        {
+            "game_level": 11,
+            "prop_deliver": 249,
+            "coin_deliver": 976204,
+            "total_coin_deliver": 6976773
+        },
+        {
+            "game_level": 12,
+            "prop_deliver": 259,
+            "coin_deliver": 816529,
+            "total_coin_deliver": 7793302
+        },
+        {
+            "game_level": 13,
+            "prop_deliver": 269,
+            "coin_deliver": 875607,
+            "total_coin_deliver": 8668909
+        },
+        {
+            "game_level": 14,
+            "prop_deliver": 276,
+            "coin_deliver": 649060,
+            "total_coin_deliver": 9317969
+        },
+        {
+            "game_level": 15,
+            "prop_deliver": 282,
+            "coin_deliver": 580570,
+            "total_coin_deliver": 9898539
+        },
+        {
+            "game_level": 16,
+            "prop_deliver": 287,
+            "coin_deliver": 501194,
+            "total_coin_deliver": 10399733
+        },
+        {
+            "game_level": 17,
+            "prop_deliver": 292,
+            "coin_deliver": 517240,
+            "total_coin_deliver": 10916973
+        },
+        {
+            "game_level": 18,
+            "prop_deliver": 295,
+            "coin_deliver": 318141,
+            "total_coin_deliver": 11235114
+        },
+        {
+            "game_level": 19,
+            "prop_deliver": 298,
+            "coin_deliver": 324046,
+            "total_coin_deliver": 11559160
+        },
+        {
+            "game_level": 20,
+            "prop_deliver": 300,
+            "coin_deliver": 219337,
+            "total_coin_deliver": 11778497
+        }
+    ]
+}

@@ -47,7 +47,8 @@ class CurvePlot:
         self.update_curve()
 
     def update_curve(self):
-        self.y = self.x_to_y_func(self.x, self.param_current, self.y_min_current, self.y_max_current)
+        self.y = self.x_to_y_func(
+            self.x, self.param_current, self.y_min_current, self.y_max_current)
         self.curve.set_ydata(self.y)
         self.ax.set_ylim([self.y_min_current, self.y_max_current])
         self.fig.canvas.draw_idle()
@@ -58,7 +59,8 @@ class CurvePlot:
     def on_getdata_clicked(self, event):
         self.y_min_current = float(self.y_min_input.text)
         self.y_max_current = float(self.y_max_input.text)
-        y = self.x_to_y_func(self.x, self.param_slider.val, self.y_min_current, self.y_max_current)
+        y = self.x_to_y_func(self.x, self.param_slider.val,
+                             self.y_min_current, self.y_max_current)
 
         self.current_param_callback({
             'x': self.x.tolist(),
@@ -70,7 +72,7 @@ class CurvePlot:
 
     def show(self):
 
-        self.fig, self.ax = plt.subplots()
+        self.fig, self.ax = plt.subplots(num=self.title)
         plt.subplots_adjust(bottom=0.25)
 
         axes_up_left = plt.axes([0.15, 0.07, 0.3, 0.03])
@@ -80,14 +82,17 @@ class CurvePlot:
 
         self.y_min_input = TextBox(axes_up_left, 'y_min', initial=self.y_min)
         self.y_max_input = TextBox(axes_up_right, 'y_max', initial=self.y_max)
-        self.param_slider = Slider(axes_down_left, 'param', valmin=self.param_min, valmax=self.param_max, valinit=self.param_init, valstep=self.param_step, color='green')
-        self.param_input = TextBox(axes_down_right, "", initial=self.param_init)
+        self.param_slider = Slider(axes_down_left, 'param', valmin=self.param_min,
+                                   valmax=self.param_max, valinit=self.param_init, valstep=self.param_step, color='green')
+        self.param_input = TextBox(
+            axes_down_right, "", initial=self.param_init)
 
         self.y_min_current = float(self.y_min_input.text)
         self.y_max_current = float(self.y_max_input.text)
         self.param_current = float(self.param_input.text)
 
-        self.y = self.x_to_y_func(self.x, self.param_current, self.y_min_current, self.y_max_current)
+        self.y = self.x_to_y_func(
+            self.x, self.param_current, self.y_min_current, self.y_max_current)
 
         self.curve, = self.ax.plot(self.x, self.y, lw=2, color='blue')
         self.ax.set_ylim([self.y_min, self.y_max])
@@ -99,12 +104,11 @@ class CurvePlot:
 
         # Add a getdata button
         getdata_button_ax = plt.axes([0.8, 0.8, 0.1, 0.04])
-        getdata_button = plt.Button(getdata_button_ax, 'Get Data', color='gray', hovercolor='lightgray')
+        getdata_button = plt.Button(
+            getdata_button_ax, 'Get Data', color='gray', hovercolor='lightgray')
 
         getdata_button.on_clicked(self.on_getdata_clicked)
 
-        # Display the plot
-        plt.title(self.title, fontsize=10)
         plt.show()
 
 

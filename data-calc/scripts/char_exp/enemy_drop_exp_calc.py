@@ -9,10 +9,11 @@ import numpy as np
 
 from scripts.plot_tool.curve_plot_power import power_curve_y
 from scripts.plot_tool.curve_plot import CurvePlot
-
+from scripts.readers.parameters import *
 
 # 使用次方曲线来计算 升级所需击杀基础怪物个数
 # 使用 基础怪物经验值 和 升级所需击杀基础怪物个数 计算出 升级所需经验值
+
 
 def get_json_save_path():
     # replace current file extension with .json
@@ -36,26 +37,25 @@ def main():
 
     param = 1.41
 
-    # 假设等级下限为 1
-    rank_min = 1
-
-    # 假设等级上限为 100
-    rank_count = 100
-
     if os.path.exists(json_save):
         with open(json_save, 'r', encoding='utf-8') as f:
             data = json.load(f)
 
-        rank_count = data['rank_count']
+        rank_min = data['rank_min']
+        rank_max = data['rank_max']
         y_min = data['y_min']
         y_max = data['y_max']
         param = data['param']
 
-    print('rank_min: ', rank_min)
-    print('rank_count: ', rank_count)
+        if rank_min != PLAYER_RANK_MIN or rank_max != PLAYER_RANK_MAX:
+            print('rank_min or rank_max not match')
+
+    print('rank_min: ', PLAYER_RANK_MIN)
+    print('rank_max: ', PLAYER_RANK_MAX)
 
     # 99 级
-    ranks = np.linspace(rank_min, rank_min + rank_count - 1, num=rank_count)
+    ranks = np.linspace(PLAYER_RANK_MIN, PLAYER_RANK_MAX,
+                        num=PLAYER_RANK_MAX - PLAYER_RANK_MIN + 1)
 
     param_min = -10.0
     param_max = 10.0
@@ -79,7 +79,8 @@ def main():
 
         with open(json_save, 'w', encoding='utf-8') as f:
             json.dump({
-                'rank_count': len(x),
+                'rank_min': PLAYER_RANK_MIN,
+                'rank_max': PLAYER_RANK_MAX,
                 'y_min': y_min,
                 'y_max': y_max,
                 'param': param,
